@@ -1,2 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿string[] array = new string[5];
+for (int i = 0; i < 5; i++)
+{
+    array[i] = Console.ReadLine()!;
+}
+Console.Write("[" + string.Join(", ", array) + "]");
